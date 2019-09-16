@@ -15,9 +15,7 @@ UI на власний смак.
 ---------------------------------------------------------
 
 
-composer require mews/captcha
-composer require doctrine/dbal
-composer require unisharp/laravel-filemanager:~1.8
+
 
 mkdir website
 
