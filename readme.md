@@ -12,6 +12,9 @@
 UI на власний смак.
 Готову роботу потрібно залити на github/bitbucket, в описі мають бути команди для інсталяції та запуску проекту.
 
+---------------------------------------------------------
+
+
 composer require mews/captcha
 composer require doctrine/dbal
 composer require unisharp/laravel-filemanager:~1.8
