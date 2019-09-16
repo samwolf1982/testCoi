@@ -11,11 +11,9 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-//Route::get('/','ShopController@index');
-Route::get('/','shop\CatalogController@index');
+
+//Route::get('/','shop\CatalogController@index');
+Route::get('/','\App\Http\Controllers\Shop\CatalogController@index');
 
 Route::get('/shop', function () {
     return view('welcome');
@@ -25,7 +23,7 @@ Route::get('users', function () {
 });
 
 //Route::get('goods','shop\GoodsController@index')->middleware('auth');
-Route::resource("goods", "shop\GoodsController",
+Route::resource("goods", "\App\Http\Controllers\Shop\GoodsController",
     [
         'names' => [
             'index' => 'goods',
@@ -36,7 +34,7 @@ Route::resource("goods", "shop\GoodsController",
     ]
 );
 
-Route::delete("/goods/images/{id}", "shop\GoodsController@removeImages") ->name("goods.images.remove");
+Route::delete("/goods/images/{id}", "\App\Http\Controllers\Shop\GoodsController@removeImages") ->name("goods.images.remove");
 
 // auth
 //Route::get('login', function() {

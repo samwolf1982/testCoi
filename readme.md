@@ -74,3 +74,11 @@ composer require mews/captcha
 composer require doctrine/dbal
 composer require unisharp/laravel-filemanager:~1.8
 
+
+apt-get install php-mbstring
+apt-get install php7.0-gd
+apt-get install php-xml
+apt-get install zip unzip php-zip
+composer require composer-plugin-api
+
+

@@ -4,3 +4,6 @@ FROM php:7.0-fpm
         && docker-php-ext-install mcrypt pdo_mysql
 
     WORKDIR /var/www
+RUN mkdir -p  /var/www/bootstrap/cache
+RUN chmod -R 777 /var/www/bootstrap/cache
+RUN chmod -R 777 /var/www/public
