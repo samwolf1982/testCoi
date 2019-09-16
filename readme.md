@@ -75,10 +75,24 @@ composer require doctrine/dbal
 composer require unisharp/laravel-filemanager:~1.8
 
 
-apt-get install php-mbstring
-apt-get install php7.0-gd
-apt-get install php-xml
-apt-get install zip unzip php-zip
+git clone https://github.com/samwolf1982/testCoi.git
+cd testCoi
+
+
+apt-get install php-mbstring php7.0-gd php-xml zip unzip php-zip composer
+
 composer require composer-plugin-api
+
+chmod -R 775 bootstrap/cache
+chmod -R 775 public
+chmod -R 775 storage
+
+ chmod 777 storage/logs/laravel.log
+ chmod 777 bootstrap/cache
+ chmod 777 storage/framework/views
+
+docker-compose up 
+
+
 
 
