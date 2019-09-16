@@ -1,0 +1,2 @@
+       <form action="{{route('goods.store')}}"
+                                  method="post" enctype="multipart/form-data" id="form-product" class="form-horizontal">

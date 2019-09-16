@@ -1,0 +1,17 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/ui-ecommerce/fonts/fontawesome.css": "/ui-ecommerce/fonts/fontawesome.css",
+    "/ui-ecommerce/css/bootstrap.css": "/ui-ecommerce/css/bootstrap.css",
+    "/ui-ecommerce/fonts/fontawesome-all.css": "/ui-ecommerce/fonts/fontawesome-all.css",
+    "/ui-ecommerce/css/plugins/fancybox/fancybox.min.css": "/ui-ecommerce/css/plugins/fancybox/fancybox.min.css",
+    "/ui-ecommerce/css/plugins/owlcarousel/owl.carousel.css": "/ui-ecommerce/css/plugins/owlcarousel/owl.carousel.css",
+    "/ui-ecommerce/css/plugins/owlcarousel/owl.theme.default.css": "/ui-ecommerce/css/plugins/owlcarousel/owl.theme.default.css",
+    "/ui-ecommerce/css/ui.css": "/ui-ecommerce/css/ui.css",
+    "/ui-ecommerce/css/responsive.css": "/ui-ecommerce/css/responsive.css",
+    "/ui-ecommerce/js/jquery-2.0.0.min.js": "/ui-ecommerce/js/jquery-2.0.0.min.js",
+    "/ui-ecommerce/js/bootstrap.bundle.min.js": "/ui-ecommerce/js/bootstrap.bundle.min.js",
+    "/ui-ecommerce/js/plugins/owlcarousel/owl.carousel.js": "/ui-ecommerce/js/plugins/owlcarousel/owl.carousel.js",
+    "/ui-ecommerce/js/plugins/fancybox/fancybox.min.js": "/ui-ecommerce/js/plugins/fancybox/fancybox.min.js",
+    "/ui-ecommerce/js/script.js": "/ui-ecommerce/js/script.js"
+}

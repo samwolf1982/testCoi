@@ -1,0 +1,44 @@
+version: '2'
+services:
+  db:
+    #    image: mysql
+    image: mysql:5.7
+    container_name: db
+    #    restart:  always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1111
+      MYSQL_DATABASE: project_db
+      MYSQL_USER: user_1
+      MYSQL_PASSWORD: 11111111
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./docker/db/dump:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
+#    networks:
+#      - front-end
+  web:
+    build:
+      context: ./
+      dockerfile: web.docker
+    volumes:
+      - ./:/var/www
+    ports:
+      - "80:80"
+    links:
+      - app
+#    networks:
+#      - front-end
+    depends_on:
+      - db
+  app:
+    build:
+      context: ./
+      dockerfile: app.docker
+    volumes:
+      - ./:/var/www
+    depends_on:
+      - db
+
+#networks:   >php artisan schedule:run
+#  front-end:
